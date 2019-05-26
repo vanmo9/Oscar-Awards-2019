@@ -1,43 +1,4 @@
-{% extends 'base.html' %}
-{% load bootstrap4 %}
-{% block content %}
-<div class="row userbody">
-    <div id="userdetails" class="row col-12 mb-2">
-        <div class="col-sm-4">
-            <img src="{{user_object.profile.profile_picture.url}}" width="152" height="152"
-                class="rounded-circle border userimage">
-        </div>
-        <div class="col-sm-8">
-            <div style="margin-bottom: 20px;">
-                <h3 style="vertical-align: middle">{{user_object.username}}</h3>          
-            </div>
-       
-                <strong>{{ user_object.profile.Name }}</strong>
-        </div>
-            <div><span>{{ user_object.profile.bio }}</span></div>
-    </div>
-</div>
-    <!-- <ul class="nav" id="my" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" href="#posts" data-toggle="tab" role="tab" aria-controls="posts"
-                aria-selected="true">
-                Posts
-            </a>
-        </li>
-       
-    </ul> -->
-{% endblock %}
-
-
-
-
-
-
-
-
-
-
-<!-- {% extends "blog/base.html" %}
+{% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
     <div class="content-section">
@@ -48,6 +9,16 @@
           <p class="text-secondary">{{ user.email }}</p>
         </div>
       </div>
-      
+      <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Profile Info</legend>
+              {{ u_form|crispy }}
+              {{ p_form|crispy }}
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Update</button>
+          </div>
+      </form>
     </div>
-{% endblock content %} -->
+{% endblock content %}
