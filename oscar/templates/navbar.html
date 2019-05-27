@@ -2,7 +2,7 @@
   <div class="container-fluid">
  
   <div>
-    <h1 style="font-style:italic">Instagram</h1>
+    <h1 style="font-style:italic">Instagram</h1>  
     {% if user.is_authenticated %}
      <a class="fas fa-user-circle" href="{% url 'profile' %}">Profile</a>
      <a class="fas fa-sign-out-alt" href="{% url 'logout' %}">Logout</a>
