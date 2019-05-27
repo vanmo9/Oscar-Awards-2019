@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
-{% block content %}  
+{% block content %}
 <div class="row">
     <div class="col-md-4">
         <div class="moha">
-            <img src="/static/img/instagram.png" alt="instagram" style="width: 450px; margin-left: 500px;">
+         <img src="https://www.wshc.sg/files/wshc/upload/cms/image/WSH_AW2019.jpg" alt="instagram" style="width: 800px; margin-left: 150px;">
         </div>
     </div>
     <div class="col-md-7">
     <div class="content-section" style="width:30%;float:right;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2000px-Instagram_logo.svg.png" width=100px height=35px alt="INSTAGRAM"></a>
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2000px-Instagram_logo.svg.png" width=100px height=35px alt="INSTAGRAM"></a> -->
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
@@ -26,6 +26,6 @@
             </small>
         </div>
     </div>
-     </div>
     </div>
+</div>
 {% endblock content %}
