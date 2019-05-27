@@ -19,7 +19,7 @@ This is a python web application that allows users to post awards to there own p
 3.  From terminal you use
     '$ git clone <https://github.com/vanmo9/Oscar-Awards-2019/>'
 
-  
+   
 ## BDD  
 
 | BEHAVIOUR | OUTPUT|
