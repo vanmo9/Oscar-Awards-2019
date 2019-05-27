@@ -43,7 +43,7 @@ This is a python web application that allows users to post awards to there own p
 
 ## Contact Information  
 
-* Email (vanmowha@gmail.com)
+* Email (vanmowha@gmail.com) 
 
 
 ## License ([MIT License]( ))
