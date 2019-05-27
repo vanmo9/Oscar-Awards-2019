@@ -6,6 +6,7 @@ from PIL import Image
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=100)
+    img = models.ImageField(default="default.jpeg", upload_to = 'images/')
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete = models.CASCADE)
