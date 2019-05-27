@@ -3,7 +3,7 @@
 This is a python web application that allows users to post awards to there own profiles and can also view other user's profile. They can also rate on other user's post. 
 
 
-![Screenshot](readme.png)
+![Screenshot](awards.png)
 
 ## Author 
 
