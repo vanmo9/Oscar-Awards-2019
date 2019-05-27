@@ -11,7 +11,7 @@ def home(request):
     posts = Post.objects.all()
     return render(request, 'home.html', locals())
 
-
+ 
 def register(request):
    if request.method == 'POST':
        form = UserRegisterForm(request.POST)
