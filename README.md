@@ -46,5 +46,5 @@ This is a python web application that allows users to post awards to there own p
 * Email (vanmowha@gmail.com) 
 
 
-## License ([MIT License]( ))
+## License ([MIT License](https://github.com/vanmo9/Oscar-Awards-2019/blob/master/LICENSE))
 This project is licensed under the MIT Open Source license, (c) [Mohamed Hassan]( )
